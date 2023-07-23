@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Any BPMN 2.0 process definitions in the processes under the resources folder will be automatically deployed by flowable.-->
+<!--Create a folder processes and add a dummy process definition (named one-task-process.bpmn20.xml) to this folder.-->
+<!--The content of this file is shown below.-->
+<definitions
+        xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+        xmlns:flowable="http://flowable.org/bpmn"
+        targetNamespace="Examples">
+
+    <process id="oneTaskProcess" name="The One Task Process">
+        <startEvent id="theStart" />
+        <sequenceFlow id="flow1" sourceRef="theStart" targetRef="theTask" />
+        <userTask id="theTask" name="my task" flowable:assignee="kermit" />
+        <sequenceFlow id="flow2" sourceRef="theTask" targetRef="theEnd" />
+        <endEvent id="theEnd" />
+    </process>
+
+</definitions>

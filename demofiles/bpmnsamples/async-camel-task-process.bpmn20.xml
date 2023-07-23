@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Any BPMN 2.0 process definitions in the processes under the resources folder will be automatically deployed by flowable.-->
+<!--https://github.com/flowable/flowable-engine/issues/1322-->
+<!--https://www.seedim.com.au/getting-started-with-flowable-and-camel/-->
+<definitions
+        xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+        xmlns:flowable="http://flowable.org/bpmn"
+        targetNamespace="Examples">
+
+    <process id="CamelVariableTransmission" name="CamelVariableTransmission" isExecutable="true">
+        <startEvent id="theCamelStart"/>
+        <serviceTask id="input" flowable:class="camel.examples.pingpong.InitialiseVariables"/>
+        <sequenceFlow id="serviceToCamel" sourceRef="ping" targetRef="saveOutput"/>
+        <serviceTask id="ping" name="Send Variable" flowable:type="camel"/>
+        <sequenceFlow id="serviceAsyncPing" sourceRef="ping" targetRef="saveOutput"/>
+        <serviceTask id="saveOutput" name="Save Variable Output" flowable:class="camel.examples.pingpong.SaveOutput"/>
+        <sequenceFlow id="outputValue" sourceRef="saveOutput" targetRef="theCamelEnd"/>
+        <endEvent id="theCamelEnd"/>
+    </process>
+
+    <!--https://github.com/flowable/flowable-engine/blob/main/modules/flowable-camel/src/test/java/org/flowable/camel/examples/ping/PingPongTest.java-->
+    <!--    <process id="CamelVariableTransmission" name="CamelVariableTransmission" isExecutable="true">-->
+    <!--        <startEvent id="theCamelStart"/>-->
+    <!--        <serviceTask id="input" flowable:class="camel.examples.pingpong.InitialiseVariables"/>-->
+    <!--        <sequenceFlow id="serviceToCamel" sourceRef="ping" targetRef="saveOutput"/>-->
+    <!--        <serviceTask id="ping" name="Send Variable" flowable:type="camel"/>-->
+    <!--        <sequenceFlow id="serviceAsyncPing" sourceRef="ping" targetRef="saveOutput"/>-->
+    <!--        <serviceTask id="saveOutput" name="Save Variable Output" flowable:class="camel.examples.pingpong.SaveOutput"/>-->
+    <!--        <sequenceFlow id="outputValue" sourceRef="saveOutput" targetRef="theCamelEnd"/>-->
+    <!--        <endEvent id="theCamelEnd"/>-->
+    <!--    </process>-->
+
+</definitions>

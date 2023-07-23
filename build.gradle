@@ -1,0 +1,68 @@
+import org.springframework.boot.gradle.plugin.SpringBootPlugin
+
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.14'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'dev.hanselwei'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '11'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation platform(SpringBootPlugin.BOM_COORDINATES)
+	implementation platform('org.apache.camel.springboot:camel-spring-boot-dependencies:3.20.2')
+	implementation platform('io.hawt:hawtio-bom:2.17.5')
+
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-artemis'
+	implementation 'org.springframework.kafka:spring-kafka'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	implementation 'org.flowable:flowable-spring-boot-starter:6.8.0'
+	implementation 'org.apache.camel.springboot:camel-spring-boot-starter'
+	implementation 'org.apache.camel.springboot:camel-direct-starter'
+	implementation 'org.apache.camel.springboot:camel-stream-starter'
+
+	implementation 'org.flowable:flowable-camel:6.8.0'
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'org.flowable:flowable-modeler:5.23.0'
+
+
+	implementation 'org.apache.camel:camel-management'
+	implementation 'org.apache.camel.springboot:camel-debug-starter'
+	implementation 'io.hawt:hawtio-springboot'
+	implementation 'io.hawt:hawtio-log-logback'
+	implementation 'org.jolokia:jolokia-core'
+
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'com.h2database:h2'
+
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.kafka:spring-kafka-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

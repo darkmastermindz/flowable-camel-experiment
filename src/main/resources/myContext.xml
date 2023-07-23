@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:camel="http://camel.apache.org/schema/spring"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                             http://www.springframework.org/schema/beans/spring-beans.xsd
+                             http://camel.apache.org/schema/spring
+                           http://camel.apache.org/schema/spring/camel-spring.xsd
+                           http://www.springframework.org/schema/context
+                             http://www.springframework.org/schema/context/spring-context-2.5.xsd
+                           http://www.springframework.org/schema/tx
+                             http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <camel:camelContext id="camelContext" xmlns="http://camel.apache.org/schema/spring" >
+<!--https://github.com/flowable/flowable-engine/blob/main/modules/flowable-camel/src/test/java/org/flowable/camel/examples/simple/SimpleCamelCallTest.java-->
+<!--        <packageScan>-->
+<!--            <package>org.flowable.camel.examples.simple</package>-->
+<!--        </packageScan>-->
+        <route>
+            <from uri="timer:simple?period=5000"/>
+            <setBody>
+                <simple>Hello World</simple>
+            </setBody>
+            <log message="{hello}"></log>
+        </route>
+    </camel:camelContext>
+
+
+</beans>
+

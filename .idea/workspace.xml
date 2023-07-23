@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="efc1b4a8-bdfc-497d-b5c3-2650d8e9f146" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demofiles/bpmnsamples/async-camel-task-process.bpmn20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demofiles/bpmnsamples/one-task-process.bpmn20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demofiles/camelroutesamples/simple-camel-route.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/hanselwei/flowablecamelexample/controller/MyRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/hanselwei/flowablecamelexample/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/hanselwei/flowablecamelexample/repository/PersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/hanselwei/flowablecamelexample/services/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/hanselwei/flowablecamelexample/services/PingPongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/flowable/ui/task/application/AsyncPingRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/flowable/ui/task/application/PingPongCamelRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/flowable/ui/task/application/SimpleFileCamelRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/myContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/processes/one-task-process.bpmn20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-security.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Su9zRS16QV6onYCcPghLzoDrKh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/hansel/Developer/flowable-camel-example/src/main/resources/processes",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "dbb866051ba935823f19fd6b0a58cd25"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/processes" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/bpmnsamples" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demofiles" />
+      <recent name="$PROJECT_DIR$/src/main/resources/processes" />
+      <recent name="$PROJECT_DIR$/bpmnsamples" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="FlowableCamelExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="flowable-camel-example.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="dev.hanselwei.flowablecamelexample.FlowableCamelExampleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efc1b4a8-bdfc-497d-b5c3-2650d8e9f146" name="Changes" comment="" />
+      <created>1689985861827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689985861827</updated>
+      <workItem from="1689985864748" duration="2235000" />
+      <workItem from="1690079150118" duration="19617000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

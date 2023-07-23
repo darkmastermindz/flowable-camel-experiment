@@ -49,6 +49,7 @@ dependencies {
 	implementation 'org.apache.camel:camel-management'
 	implementation 'org.apache.camel.springboot:camel-debug-starter'
 	implementation 'io.hawt:hawtio-springboot'
+	implementation 'io.hawt:hawtio-core'
 	implementation 'io.hawt:hawtio-log-logback'
 	implementation 'org.jolokia:jolokia-core'
 
